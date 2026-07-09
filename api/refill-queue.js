@@ -42,7 +42,11 @@ const AFFILIATE_PROGRAMS = {
   },
 };
 
+import { requirePublishSecret } from './_lib/auth.js';
+
 export default async function handler(req, res) {
+  if (!requirePublishSecret(req, res)) return;
+
   const githubToken = process.env.OSGIT_TOKEN;
   const anthropicKey = process.env.ANTHROPIC_API_KEY;
 
