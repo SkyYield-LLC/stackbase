@@ -5,7 +5,7 @@ Quick reference for human teammates. AI agents see [`AGENTS.md`](./AGENTS.md) fo
 ## Getting set up
 
 ```bash
-git clone https://github.com/smcatl/stackbase.git
+git clone https://github.com/SkyYield-LLC/stackbase.git
 cd stackbase
 npm install
 cp .env.example .env.local
